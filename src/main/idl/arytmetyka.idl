@@ -1,0 +1,21 @@
+module pl {
+    module edu {
+        module pja {
+            module sri {
+                module ewcislo {
+                    module zad06_corba_arytmetyka {
+                        interface Arytmetyka {
+                            attribute double s1, s2;
+                            readonly attribute double wynik;
+                            exception DzieleniePrzezZero { };
+                            void suma();
+                            void roznica();
+                            void iloczyn();
+                            void iloraz() raises(DzieleniePrzezZero);
+                        };
+                    };
+                };
+            };
+        };
+    };
+};
